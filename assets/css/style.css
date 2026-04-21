@@ -38,10 +38,14 @@ header {
   z-index: 100;
 }
 .logo {
-  font-family: var(--font-script);
-  font-size: 28px;
-  color: var(--accent-gold);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.logo-img {
+  height: 48px;
+  width: auto;
+  display: block;
 }
 nav a {
   font-family: var(--font-body);
@@ -317,6 +321,14 @@ footer a:hover { color: var(--accent-gold); }
   color: var(--accent-gold);
   margin-bottom: 16px;
   display: block;
+}
+.footer-logo-img {
+  height: 52px;
+  width: auto;
+  display: block;
+  margin-bottom: 16px;
+  filter: brightness(0) invert(1);
+  opacity: 0.85;
 }
 
 /* MISC */
