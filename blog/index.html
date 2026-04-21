@@ -1,0 +1,24 @@
+---
+layout: default
+title: Blog & Market Updates
+description: Katy TX real estate news, market updates, and community guides from Christa Burgess.
+---
+<section class="section">
+  <h2>Blog & Market Updates</h2>
+  <p>Real estate insights, community news, and market updates for Katy, Cinco Ranch, and West Houston.</p>
+  <div class="grid-3" style="margin-top:40px">
+    {% for post in site.posts %}
+    <div class="card">
+      <div class="card-body">
+        <h3 style="font-size:20px">{{ post.title }}</h3>
+        <p style="font-size:13px; color:#888">{{ post.date | date: "%B %-d, %Y" }}</p>
+        <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+        <a href="{{ post.url }}">Read More →</a>
+      </div>
+    </div>
+    {% endfor %}
+    {% if site.posts.size == 0 %}
+    <p>Market updates and community guides coming soon.</p>
+    {% endif %}
+  </div>
+</section>

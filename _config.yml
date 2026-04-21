@@ -1,0 +1,8 @@
+title: "Christa Burgess | Katy TX Realtor"
+description: "Katy and Cinco Ranch real estate expert. Broker Associate, RE/MAX Cinco Ranch."
+url: "https://christaburgess.com"
+baseurl: ""
+markdown: kramdown
+theme: null
+plugins: []
+exclude: ["Gemfile", "Gemfile.lock", "node_modules", "vendor"]

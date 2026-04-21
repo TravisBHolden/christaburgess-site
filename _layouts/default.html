@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <a href="/" class="logo">Christa Burgess</a>
+  <nav>
+    <a href="/about.html" {% if page.url contains 'about' %}class="active"{% endif %}>About</a>
+    <a href="/communities.html" {% if page.url contains 'communit' %}class="active"{% endif %}>Communities</a>
+    <a href="/services.html" {% if page.url contains 'services' %}class="active"{% endif %}>Services</a>
+    <a href="/listings.html" {% if page.url contains 'listings' %}class="active"{% endif %}>Listings</a>
+    <a href="/reviews.html" {% if page.url contains 'reviews' %}class="active"{% endif %}>Reviews</a>
+    <a href="/blog/" {% if page.url contains 'blog' %}class="active"{% endif %}>Blog</a>
+    <a href="/contact.html" {% if page.url contains 'contact' %}class="active"{% endif %}>Contact</a>
+  </nav>
+</header>
+
+{{ content }}
+
+<footer>
+  <div class="inner">
+    <div>
+      <span class="footer-logo">Christa Burgess</span>
+      <p>Broker Associate | RE/MAX Cinco Ranch<br>
+      2877 Commercial Center Blvd<br>
+      Katy, TX 77494</p>
+      <p style="margin-top:16px">
+        <a href="tel:8325262619">(832) 526-2619</a><br>
+        <a href="mailto:christapburgess@gmail.com">christapburgess@gmail.com</a>
+      </p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="/about.html" style="display:block">About</a>
+      <a href="/communities.html" style="display:block">Communities</a>
+      <a href="/services.html" style="display:block">Services</a>
+      <a href="/listings.html" style="display:block">Listings</a>
+      <a href="/reviews.html" style="display:block">Reviews</a>
+      <a href="/blog/" style="display:block">Blog</a>
+      <a href="/contact.html" style="display:block">Contact</a>
+    </div>
+    <div>
+      <h4>Connect</h4>
+      <a href="https://www.facebook.com/christaburgessremax/" style="display:block" target="_blank">Facebook</a>
+      <a href="https://www.linkedin.com/in/christaburgess/" style="display:block" target="_blank">LinkedIn</a>
+      <a href="https://www.instagram.com/christapburgess/" style="display:block" target="_blank">Instagram</a>
+      <a href="https://www.har.com/christaburgess" style="display:block" target="_blank">HAR.com Profile</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2026 Christa Burgess. All rights reserved. License #516906. Equal Housing Opportunity.<br>
+    RE/MAX Cinco Ranch | 2877 Commercial Center Blvd, Katy, TX 77494
+  </div>
+</footer>
+
+</body>
+</html>
