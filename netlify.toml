@@ -1,7 +1,13 @@
 [build]
   command = "bundle exec jekyll build"
   publish = "_site"
+  functions = "netlify/functions"
 
 [build.environment]
   JEKYLL_ENV = "production"
   RUBY_VERSION = "3.3.6"
+
+[[redirects]]
+  from = "/contact-submit"
+  to = "/.netlify/functions/contact"
+  status = 200
