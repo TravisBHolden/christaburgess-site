@@ -100,6 +100,54 @@ nav a.active { color: var(--text-white); text-decoration: underline; text-underl
 .hero-sm { min-height: 40vh; }
 .hero-sm h1 { font-size: 48px; }
 
+/* SQUARESPACE-STYLE DARK HERO */
+.hero-dark {
+  background: var(--bg-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 40px 64px;
+  text-align: center;
+}
+.hero-photo-wrap {
+  width: 100%;
+  max-width: 680px;
+  margin-bottom: 36px;
+}
+.hero-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.btn-gold-outline {
+  display: inline-block;
+  padding: 14px 48px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  border: 1.5px solid var(--accent-gold);
+  background: transparent;
+  text-decoration: none;
+  border-radius: 40px;
+  margin-bottom: 48px;
+  transition: background 0.2s, color 0.2s;
+}
+.btn-gold-outline:hover {
+  background: var(--accent-gold);
+  color: var(--bg-dark);
+}
+.hero-headline h1 {
+  font-family: var(--font-heading);
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--text-white);
+  max-width: 800px;
+}
+
 /* BUTTONS */
 .btn {
   display: inline-block;
