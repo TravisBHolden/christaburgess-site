@@ -159,6 +159,7 @@ nav a.active { color: var(--text-white); text-decoration: underline; text-underl
   text-transform: uppercase;
   text-decoration: none;
   border: none;
+  border-radius: 40px;
   cursor: pointer;
   transition: all 0.3s;
 }
