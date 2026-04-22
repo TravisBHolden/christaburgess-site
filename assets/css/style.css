@@ -181,6 +181,30 @@ nav a.active { color: var(--text-white); text-decoration: underline; text-underl
   margin-left: auto;
   margin-right: auto;
 }
+.contact-link-large {
+  font-family: var(--font-heading);
+  font-size: 72px;
+  font-weight: 400;
+  color: var(--text-white);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 32px;
+  transition: color 0.2s;
+}
+.contact-link-large:hover { color: var(--accent-gold); }
+.contact-detail {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--text-white);
+  margin-bottom: 12px;
+}
+.contact-detail a {
+  color: var(--text-white);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.contact-detail a:hover { color: var(--accent-gold); }
 .hero-headline h1 {
   font-family: var(--font-heading);
   font-size: 56px;
