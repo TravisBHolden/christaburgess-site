@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="hero hero-sm" style="background-image: url('/assets/img/hero-home.jpg'); min-height: 30vh;">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>{{ page.title }}</h1>
+    <p class="subtitle">{{ page.date | date: "%B %-d, %Y" }} · Christa Burgess</p>
+  </div>
+</div>
+
+<section class="section">
+  <div style="max-width:760px; margin:0 auto;">
+    {{ content }}
+    <div style="margin-top:60px; padding-top:40px; border-top:1px solid var(--bg-taupe);">
+      <p style="color:#888; margin-bottom:24px;">← <a href="/blog/" style="color:var(--accent-maroon);">Back to all posts</a></p>
+      <div class="section-dark" style="border-radius:4px; padding:40px; text-align:center;">
+        <h3 style="color:var(--accent-gold); margin-bottom:16px;">Questions About the Market?</h3>
+        <p style="color:var(--text-light); margin-bottom:24px;">Christa Burgess · Broker Associate · RE/MAX Cinco Ranch · (832) 526-2619</p>
+        <a href="/contact.html" class="btn btn-gold">Get In Touch</a>
+      </div>
+    </div>
+  </div>
+</section>
