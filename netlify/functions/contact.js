@@ -59,6 +59,8 @@ exports.handler = async function (event) {
     };
   }
 
+  // OPENCLAW_HOOK_URL must point to: https://traviss-macbook-pro.tailf1a956.ts.net/hooks/hooks/formspree
+  // Note the double /hooks/hooks/ — this is hooks.path (/hooks) + match.path (/hooks/formspree)
   const hookUrl   = process.env.OPENCLAW_HOOK_URL;
   const hookToken = process.env.OPENCLAW_HOOK_TOKEN;
 
