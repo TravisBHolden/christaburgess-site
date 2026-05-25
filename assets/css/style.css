@@ -364,6 +364,10 @@ h3 { font-size: 28px; margin-bottom: 16px; }
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
 }
+/* 7-item community grid: center the lone last card */
+.grid-3-communities > *:last-child:nth-child(3n+1) {
+  grid-column: 2;
+}
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
