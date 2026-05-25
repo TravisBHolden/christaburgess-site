@@ -53,7 +53,8 @@ description: Contact Christa Burgess — Broker Associate, RE/MAX Cinco Ranch. C
     <div>
       <h2>Send Me a Message</h2>
       <p style="margin-bottom:32px;">Fill out the form below and I'll get back to you promptly.</p>
-      <form action="/contact-submit" method="POST" style="display:flex; flex-direction:column; gap:16px;">
+      <form action="/thank-you" method="POST" netlify data-netlify="true" data-netlify-honeypot="bot-field" name="contact" style="display:flex; flex-direction:column; gap:16px;">
+        <input type="hidden" name="form-name" value="contact">
         <div>
           <label style="display:block; font-weight:600; margin-bottom:6px; color:var(--text-charcoal);">Name</label>
           <input type="text" name="name" required placeholder="Your name" style="width:100%; padding:12px 16px; border:1px solid #ccc; border-radius:6px; font-size:16px; font-family:inherit; box-sizing:border-box;">
@@ -70,11 +71,10 @@ description: Contact Christa Burgess — Broker Associate, RE/MAX Cinco Ranch. C
           <label style="display:block; font-weight:600; margin-bottom:6px; color:var(--text-charcoal);">Your Question</label>
           <textarea name="message" required placeholder="What would you like to know?" rows="5" style="width:100%; padding:12px 16px; border:1px solid #ccc; border-radius:6px; font-size:16px; font-family:inherit; resize:vertical; box-sizing:border-box;"></textarea>
         </div>
-        <!-- Honeypot field: hidden from humans, bots fill it in -->
-        <div style="display:none;" aria-hidden="true">
-          <label>Leave this blank</label>
-          <input type="text" name="_hp" tabindex="-1" autocomplete="off">
-        </div>
+        <!-- Netlify honeypot: hidden from humans, bots fill it in -->
+        <p style="display:none;" aria-hidden="true">
+          <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+        </p>
         <div>
           <button type="submit" class="btn btn-gold" style="width:100%; cursor:pointer; border:none; font-size:16px;">Send Message</button>
         </div>
