@@ -2,6 +2,7 @@
 
 :root {
   --bg-white: #FFFFFF;
+  --bg-cream: #F7F1E3;
   --bg-dark: #1A1A1A;
   --bg-taupe: #DED6CB;
   --text-charcoal: #1A1A1A;
@@ -376,7 +377,7 @@ h3 { font-size: 28px; margin-bottom: 16px; }
 
 /* CARDS */
 .card {
-  background: var(--bg-white);
+  background: var(--bg-cream);
   border-radius: 4px;
   overflow: hidden;
   box-shadow: 0 2px 12px rgba(0,0,0,0.08);
