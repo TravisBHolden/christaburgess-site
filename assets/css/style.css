@@ -394,6 +394,7 @@ h3 { font-size: 28px; margin-bottom: 16px; }
   background: var(--bg-cream);
   display: block;
   filter: grayscale(100%);
+  mix-blend-mode: multiply;
 }
 .card-body { padding: 24px; }
 .card-body h3 { font-size: 22px; margin-bottom: 8px; }
