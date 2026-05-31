@@ -15,27 +15,28 @@ description: Grand Lakes real estate in Katy TX — established master-planned c
 
 <!-- LISTING STATS -->
 <div class="listing-stats">
+  {% assign stats = site.data["community-stats"].communities["grand-lakes"] %}
   <div class="inner">
     <h3>Current Market — Active Listings</h3>
     <div class="stats-grid">
       <div class="stat-box">
-        <div class="stat-value">45</div>
+        <div class="stat-value">{{ stats.active }}</div>
         <div class="stat-label">Homes For Sale</div>
       </div>
       <div class="stat-box">
-        <div class="stat-value">$673,999</div>
+        <div class="stat-value">{{ stats.avg_list_price }}</div>
         <div class="stat-label">Avg. List Price</div>
       </div>
       <div class="stat-box">
-        <div class="stat-value">$188.93</div>
+        <div class="stat-value">{{ stats.avg_price_sqft }}</div>
         <div class="stat-label">Avg. Price / Sqft</div>
       </div>
       <div class="stat-box">
-        <div class="stat-value">$437K – $960K+</div>
+        <div class="stat-value">{{ stats.price_range }}</div>
         <div class="stat-label">Price Range</div>
       </div>
     </div>
-    <p class="stats-updated">Data updated May 29, 2026 · Source: HAR.com · ZIP 77450 &amp; 77494</p>
+    <p class="stats-updated">Data updated {{ site.data["community-stats"].updated }} · Source: HAR.com · ZIP 77450 &amp; 77494</p>
   </div>
 </div>
 
