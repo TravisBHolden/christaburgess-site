@@ -12,6 +12,25 @@
   to = "/.netlify/functions/contact"
   status = 200
 
+# Community images — always revalidate so updated photos show immediately
+[[headers]]
+  for = "/assets/img/community-*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Hero photos — same treatment
+[[headers]]
+  for = "/assets/img/*-hero.*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# CSS/JS — cache aggressively (Jekyll fingerprints these)
+[[headers]]
+  for = "/assets/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Security headers — all pages
 [[headers]]
   for = "/*"
   [headers.values]
