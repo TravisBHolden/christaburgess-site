@@ -90,6 +90,7 @@ nav a.active { color: var(--text-white); text-decoration: underline; text-underl
   font-weight: 400;
   line-height: 1.2;
   margin-bottom: 16px;
+  color: var(--text-white);
   text-shadow: 0 2px 8px rgba(0,0,0,0.6);
 }
 .hero .subtitle {
