@@ -76,7 +76,7 @@ nav a.active { color: var(--text-white); text-decoration: underline; text-underl
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(26,26,26,0.68);
+  background: rgba(26,26,26,0.78);
 }
 .hero-content {
   position: relative;
@@ -90,6 +90,7 @@ nav a.active { color: var(--text-white); text-decoration: underline; text-underl
   font-weight: 400;
   line-height: 1.2;
   margin-bottom: 16px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
 }
 .hero .subtitle {
   font-family: var(--font-body);
@@ -97,6 +98,7 @@ nav a.active { color: var(--text-white); text-decoration: underline; text-underl
   font-weight: 300;
   margin-bottom: 32px;
   opacity: 0.9;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.6);
 }
 .hero-sm { min-height: 40vh; }
 .hero-sm h1 { font-size: 48px; }
@@ -541,6 +543,34 @@ img { max-width: 100%; height: auto; }
   width: 100%;
   max-width: 480px;
   border-radius: 4px;
+}
+
+/* ACCESSIBILITY */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* FAQ LIST */
+.faq-list dt {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-top: 24px;
+  margin-bottom: 6px;
+}
+.faq-list dd {
+  margin-left: 0;
+  color: var(--text-body);
+  line-height: 1.7;
 }
 
 /* RESPONSIVE */
