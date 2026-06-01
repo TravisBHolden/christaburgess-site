@@ -587,4 +587,26 @@ img { max-width: 100%; height: auto; }
   .stats { flex-direction: column; gap: 24px; }
   .section { padding: 48px 20px; }
   footer .inner { grid-template-columns: 1fr; }
+
+  /* Community cards: horizontal scroll carousel — one card at a time */
+  .grid-3-communities {
+    display: flex !important;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    padding: 4px 20px 20px;
+    margin: 0 -20px;
+    scrollbar-width: none;
+  }
+  .grid-3-communities::-webkit-scrollbar { display: none; }
+  .grid-3-communities > * {
+    flex: 0 0 85%;
+    scroll-snap-align: start;
+    max-width: 85%;
+  }
+  .grid-3-communities > *:last-child:nth-child(3n+1) {
+    grid-column: auto !important;
+  }
 }
