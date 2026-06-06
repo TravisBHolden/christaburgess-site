@@ -1,50 +1,56 @@
 # Community market stats — updated via HAR.com
-# Last updated: May 30, 2026
+# Last updated: June 6, 2026
 # To update: edit values below and push. Jekyll rebuilds automatically.
 
-updated: "May 30, 2026"
+updated: "June 6, 2026"
 
 communities:
   cinco-ranch:
-    active: 237
+    active: 238
     new_this_week: 10
     avg_dom: 32
+    avg_list_price: "$669,077"
+    avg_price_sqft: "$192.94"
     price_range: "$295K – $2.1M"
     har_url: "https://www.har.com/cinco-ranch/masterplan_6"
 
   grand-lakes:
-    active: 45
-    avg_list_price: "$673,999"
-    avg_price_sqft: "$188.93"
-    price_range: "$437K – $960K+"
+    active: 47
+    avg_list_price: "$680,180"
+    avg_price_sqft: "$189.98"
+    price_range: "$264K – $960K+"
     har_url: "https://www.har.com/grand-lakes/masterplan_15"
     source_note: "ZIP 77450 & 77494"
 
   cross-creek-ranch:
-    active: 182
+    active: 177
     new_this_week: 3
     avg_dom: 53
+    avg_list_price: "$632,182"
+    avg_price_sqft: "$197.47"
     price_range: "$289K – $1.55M"
     har_url: "https://www.har.com/cross-creek-ranch/masterplan_80"
 
   fulshear:
-    active: 948
+    active: 932
     new_this_week: 38
     avg_dom: 38
-    price_range: "$280K – $3.7M"
+    price_range: "$260K – $3.7M"
     har_url: "https://www.har.com/fulshear/realestate/for_sale"
 
   heritage-grand:
-    active: 10
+    active: 11
     new_this_week: 1
     avg_dom: 47
-    price_range: "$320K – $460K"
+    price_range: "$310K – $460K"
     har_url: "https://www.har.com/katy/realestate/for_sale?subdivisions=Heritage+Grand"
 
   jordan-ranch:
-    active: 186
+    active: 182
     new_this_week: 3
     avg_dom: 39
+    avg_list_price: "$537,551"
+    avg_price_sqft: "$194.46"
     price_range: "$320K – $1.45M"
     har_url: "https://www.har.com/jordan-ranch/masterplan_118"
 
@@ -53,4 +59,4 @@ communities:
     new_this_week: 2
     avg_dom: 55
     price_range: "$335K – $699K"
-    har_url: "https://www.har.com/pricetrends/bonterra-at-cross-creek-ranch-realestate/12283/for-sale"
+    har_url: "https://www.har.com/fulshear/realestate/for_sale?subdivisions=Bonterra+at+Cross+Creek+Ranch"
