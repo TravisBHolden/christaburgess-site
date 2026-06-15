@@ -12,6 +12,11 @@
   to = "/.netlify/functions/contact"
   status = 200
 
+[[redirects]]
+  from = "/communities/bonterra/"
+  to = "/communities/bonterra-at-cross-creek-ranch/"
+  status = 301
+
 # Community images — always revalidate so updated photos show immediately
 [[headers]]
   for = "/assets/img/community-*"
