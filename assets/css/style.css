@@ -1703,3 +1703,82 @@ textarea.form-control {
   background: var(--gold-light);
   color: var(--ink);
 }
+
+/* ============================================================
+   HERO CREAM — light editorial hero (no photo)
+   ============================================================ */
+.hero-cream {
+  background: var(--cream);
+  padding: 80px 40px 64px;
+  text-align: center;
+  border-bottom: 1px solid rgba(196,165,90,0.2);
+}
+.hero-cream h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+.hero-cream .subtitle {
+  font-family: var(--font-body);
+  font-size: 18px;
+  color: var(--charcoal);
+  max-width: 700px;
+  margin: 0 auto 32px;
+  line-height: 1.7;
+}
+
+/* ============================================================
+   BLOG / POST STYLES
+   ============================================================ */
+.post-body {
+  max-width: 760px;
+  margin: 0 auto;
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.85;
+  color: var(--charcoal);
+}
+.post-body h2 {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--ink);
+  margin: 48px 0 16px;
+}
+.post-body h3 {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--ink);
+  margin: 36px 0 12px;
+}
+.post-body p { margin-bottom: 20px; }
+.post-body ul, .post-body ol {
+  padding-left: 24px;
+  margin-bottom: 20px;
+  line-height: 2;
+}
+.post-body strong { color: var(--ink); }
+.post-body a { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
+.post-body blockquote {
+  border-left: 3px solid var(--gold);
+  padding: 12px 24px;
+  margin: 32px 0;
+  font-style: italic;
+  font-size: 19px;
+  color: var(--ink);
+  background: var(--parchment);
+}
+.post-footer { margin-top: 64px; padding-top: 40px; border-top: 1px solid rgba(196,165,90,0.25); }
+.post-back {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--gold);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+.post-back:hover { color: var(--maroon); }
+.post-bio { padding-top: 40px; border-top: 1px solid rgba(196,165,90,0.15); }

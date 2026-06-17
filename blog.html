@@ -1,0 +1,50 @@
+---
+layout: default
+title: Blog & Market Updates
+description: Katy TX real estate insights, market updates, and community guides from Christa Burgess — Broker Associate, RE/MAX Cinco Ranch.
+---
+
+<div class="hero-cream">
+  <div class="inner" style="text-align:center;">
+    <p class="section-label">MARKET INSIGHTS &amp; COMMUNITY GUIDES</p>
+    <h1>From the Field</h1>
+    <p class="subtitle" style="color:var(--charcoal);">Real estate knowledge, community character, and market perspective — written for buyers and sellers who want to understand the Katy area, not just search it.</p>
+  </div>
+</div>
+
+<div class="field-divider"><span>✦</span></div>
+
+<section class="section">
+  <div class="inner">
+    <div class="grid-3">
+      {% for post in site.posts %}
+      <div class="card">
+        <div class="card-body">
+          <p class="section-label" style="font-size:10px; margin-bottom:12px;">{{ post.date | date: "%B %-d, %Y" }}</p>
+          <h3>{{ post.title }}</h3>
+          <p style="margin-top:12px;">{{ post.excerpt | strip_html | truncatewords: 28 }}</p>
+          <a href="{{ post.url }}" class="card-learn" style="display:inline-block; margin-top:16px;">Read More →</a>
+        </div>
+      </div>
+      {% endfor %}
+      {% if site.posts.size == 0 %}
+      <div class="field-note naturalist-note" style="grid-column:1/-1;">
+        <p class="field-note-label">NATURALIST'S NOTE</p>
+        <p>Market updates, community guides, and seasonal insights are coming soon. Check back — or reach out directly if there's something specific you'd like to know about the Katy area.</p>
+        <a href="/contact.html" class="btn btn-outline" style="display:inline-block; margin-top:20px;">Ask Christa</a>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<div class="field-divider"><span>✦</span></div>
+
+<div class="section-dark text-center">
+  <div class="inner">
+    <p class="section-label" style="color:rgba(196,165,90,0.8);">STAY CURRENT</p>
+    <h2 style="color:var(--cream);">Know Your Market</h2>
+    <p style="color:rgba(247,241,227,0.75); max-width:600px; margin:16px auto 32px;">Whether you're thinking about buying, selling, or just keeping an eye on the market — I share what I'm actually seeing on the ground. No spin, no hype.</p>
+    <a href="/contact.html" class="btn btn-gold">Get In Touch</a>
+  </div>
+</div>

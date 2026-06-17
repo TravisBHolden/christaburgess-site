@@ -2,23 +2,40 @@
 layout: default
 ---
 
-<div class="hero hero-sm" style="background-image: url('/assets/img/hero-home.jpg'); min-height: 30vh;">
+<div class="hero hero-sm" style="background-image: url('/assets/img/hero-home.jpg');">
   <div class="hero-overlay"></div>
   <div class="hero-content">
+    <p class="section-label" style="color:rgba(196,165,90,0.8);">MARKET INSIGHTS &amp; COMMUNITY GUIDES</p>
     <h1>{{ page.title }}</h1>
     <p class="subtitle">{{ page.date | date: "%B %-d, %Y" }} · Christa Burgess</p>
   </div>
 </div>
 
+<div class="field-divider"><span>✦</span></div>
+
 <section class="section">
-  <div style="max-width:760px; margin:0 auto;">
+  <div class="post-body">
     {{ content }}
-    <div style="margin-top:60px; padding-top:40px; border-top:1px solid var(--bg-taupe);">
-      <p style="color:#888; margin-bottom:24px;">← <a href="/blog/" style="color:var(--accent-maroon);">Back to all posts</a></p>
-      <div class="section-dark" style="border-radius:4px; padding:40px; text-align:center;">
-        <h3 style="color:var(--accent-gold); margin-bottom:16px;">Questions About the Market?</h3>
-        <p style="color:var(--text-light); margin-bottom:24px;">Christa Burgess · Broker Associate · RE/MAX Cinco Ranch · (832) 526-2619</p>
-        <a href="/contact.html" class="btn btn-gold">Get In Touch</a>
+
+    <div class="post-footer">
+      <a href="/blog/" class="post-back">← All Posts</a>
+
+      <div class="field-note christas-tip" style="margin-top:48px;">
+        <p class="field-note-label">CHRISTA'S TIP</p>
+        <p>Have questions about what this means for your home or your search? I'm happy to talk through it — no obligation, just honest guidance.</p>
+        <a href="/contact.html" class="btn btn-primary" style="margin-top:20px; display:inline-block;">Get In Touch</a>
+      </div>
+
+      <div class="post-bio" style="margin-top:48px;">
+        <p class="section-label">ABOUT THE AUTHOR</p>
+        <div style="display:flex; gap:24px; align-items:flex-start; margin-top:16px;">
+          <img src="/assets/img/christa-headshot-2.jpg" alt="Christa Burgess" style="width:72px; height:72px; border-radius:50%; object-fit:cover; flex-shrink:0;">
+          <div>
+            <strong style="font-family:var(--font-heading); font-size:18px; display:block; margin-bottom:4px;">Christa Burgess</strong>
+            <p style="font-size:14px; color:var(--olive); margin-bottom:8px;">Broker Associate · RE/MAX Cinco Ranch · License #516906</p>
+            <p style="font-size:15px;">23 years guiding families home in Katy, Cinco Ranch, Fulshear, and West Houston. ABR · CRS · CIPS · CLHMS and six more designations — but the one that matters most is the one her clients gave her: trusted advisor.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
