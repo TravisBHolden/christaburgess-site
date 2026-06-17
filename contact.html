@@ -4,99 +4,126 @@ title: Contact
 description: Contact Christa Burgess — Broker Associate, RE/MAX Cinco Ranch. Call, email, or connect on social media. Katy TX real estate.
 ---
 
-<div class="hero hero-sm" style="background-image: url('/assets/img/hero-home.jpg'); min-height: 40vh;">
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <h1>Let's Talk</h1>
-    <p class="subtitle">Ready when you are — no pressure, no obligation</p>
+<!-- HERO -->
+<div class="hero-cream">
+  <div class="inner" style="text-align:center;">
+    <p class="section-label">LET'S TALK</p>
+    <h1>Ready When You Are</h1>
+    <p class="subtitle" style="color:var(--charcoal);">No pitch. No pressure. Just honest guidance.</p>
   </div>
 </div>
 
-<!-- CONTACT INFO -->
+<div class="field-divider"><span>✦</span></div>
+
+<!-- CONTACT INFO + FORM -->
 <section class="section">
-  <div class="two-col">
+  <div class="inner">
+    <div class="two-col">
 
-    <div>
-      <h2>Get In Touch</h2>
-      <p style="margin-bottom:40px;">Whether you're ready to move or just starting to think about it — reach out. I'm happy to have a conversation, answer questions, or run a quick market analysis. No pitch, no pressure.</p>
-
-      <div style="margin-bottom:32px;">
-        <h3 style="color:var(--accent-maroon); margin-bottom:12px;">📞 Phone</h3>
-        <a href="tel:8325262619" style="font-size:22px; font-weight:700; color:var(--text-charcoal); text-decoration:none;">(832) 526-2619</a>
-      </div>
-
-      <div style="margin-bottom:32px;">
-        <h3 style="color:var(--accent-maroon); margin-bottom:12px;">✉️ Email</h3>
-        <a href="mailto:christapburgess@gmail.com" style="font-size:18px; color:var(--text-charcoal); text-decoration:none;">christapburgess@gmail.com</a>
-      </div>
-
-      <div style="margin-bottom:32px;">
-        <h3 style="color:var(--accent-maroon); margin-bottom:12px;">🏢 Office</h3>
-        <p style="font-size:16px; line-height:1.8;">
-          RE/MAX Cinco Ranch<br>
-          2877 Commercial Center Blvd<br>
-          Katy, TX 77494
-        </p>
-      </div>
-
+      <!-- LEFT: Contact Info -->
       <div>
-        <h3 style="color:var(--accent-maroon); margin-bottom:16px;">Connect</h3>
-        <div style="display:flex; gap:16px; flex-wrap:wrap;">
-          <a href="https://www.facebook.com/christaburgessremax/" target="_blank" class="btn btn-outline" style="font-size:14px; padding:10px 20px;">Facebook</a>
-          <a href="https://www.linkedin.com/in/christaburgess/" target="_blank" class="btn btn-outline" style="font-size:14px; padding:10px 20px;">LinkedIn</a>
-          <a href="https://www.instagram.com/christapburgess/" target="_blank" class="btn btn-outline" style="font-size:14px; padding:10px 20px;">Instagram</a>
-          <a href="https://www.har.com/christaburgess" target="_blank" class="btn btn-outline" style="font-size:14px; padding:10px 20px;">HAR.com</a>
+        <p class="section-label">GET IN TOUCH</p>
+        <h2>Let's Have a Conversation</h2>
+        <p style="margin:16px 0 40px; line-height:1.8;">Whether you're ready to move or just starting to think about it — reach out. I'm happy to answer questions, run a quick market analysis, or just talk through your situation. No pitch, no pressure.</p>
+
+        <div style="margin-bottom:28px;">
+          <p class="section-label" style="font-size:10px; margin-bottom:8px;">PHONE</p>
+          <a href="tel:8325262619" style="font-size:24px; font-family:var(--font-heading); color:var(--ink); text-decoration:none;">(832) 526-2619</a>
+        </div>
+
+        <div style="margin-bottom:28px;">
+          <p class="section-label" style="font-size:10px; margin-bottom:8px;">EMAIL</p>
+          <a href="mailto:christapburgess@gmail.com" style="font-size:18px; font-family:var(--font-body); color:var(--ink); text-decoration:none;">christapburgess@gmail.com</a>
+        </div>
+
+        <div style="margin-bottom:28px;">
+          <p class="section-label" style="font-size:10px; margin-bottom:8px;">OFFICE</p>
+          <p style="font-size:16px; line-height:1.9; font-family:var(--font-body);">
+            RE/MAX Cinco Ranch<br>
+            2877 Commercial Center Blvd<br>
+            Katy, TX 77494
+          </p>
+        </div>
+
+        <div class="field-note christas-tip" style="margin-top:32px;">
+          <p class="field-note-label">CHRISTA'S TIP</p>
+          <p>Text or call first — I respond fastest by phone. If you're not ready to talk yet, email works too. There's no wrong way to start the conversation.</p>
         </div>
       </div>
-    </div>
 
-    <div>
-      <h2>Send Me a Message</h2>
-      <p style="margin-bottom:32px;">Fill out the form below and I'll get back to you promptly.</p>
-      <form action="/thank-you" method="POST" netlify data-netlify="true" data-netlify-honeypot="bot-field" name="contact" style="display:flex; flex-direction:column; gap:16px;">
-        <input type="hidden" name="form-name" value="contact">
-        <div>
-          <label style="display:block; font-weight:600; margin-bottom:6px; color:var(--text-charcoal);">Name</label>
-          <input type="text" name="name" required placeholder="Your name" style="width:100%; padding:12px 16px; border:1px solid #ccc; border-radius:6px; font-size:16px; font-family:inherit; box-sizing:border-box;">
+      <!-- RIGHT: Contact Form -->
+      <div>
+        <div class="card" style="padding:40px;">
+          <p class="section-label">SEND A MESSAGE</p>
+          <p style="margin:8px 0 28px; font-size:15px; color:var(--charcoal); opacity:0.8;">Fill out the form and I'll get back to you promptly.</p>
+          <form action="/thank-you" method="POST" netlify data-netlify="true" data-netlify-honeypot="bot-field" name="contact" style="display:flex; flex-direction:column; gap:16px;">
+            <input type="hidden" name="form-name" value="contact">
+            <div>
+              <label style="display:block; font-weight:600; margin-bottom:6px; color:var(--ink); font-family:var(--font-body); font-size:13px; letter-spacing:1px; text-transform:uppercase;">Name</label>
+              <input type="text" name="name" required placeholder="Your name" style="width:100%; padding:12px 16px; border:1px solid rgba(196,165,90,0.4); border-radius:2px; font-size:16px; font-family:var(--font-body); box-sizing:border-box; background:var(--cream);">
+            </div>
+            <div>
+              <label style="display:block; font-weight:600; margin-bottom:6px; color:var(--ink); font-family:var(--font-body); font-size:13px; letter-spacing:1px; text-transform:uppercase;">Email</label>
+              <input type="email" name="email" required placeholder="your@email.com" style="width:100%; padding:12px 16px; border:1px solid rgba(196,165,90,0.4); border-radius:2px; font-size:16px; font-family:var(--font-body); box-sizing:border-box; background:var(--cream);">
+            </div>
+            <div>
+              <label style="display:block; font-weight:600; margin-bottom:6px; color:var(--ink); font-family:var(--font-body); font-size:13px; letter-spacing:1px; text-transform:uppercase;">Phone <span style="font-weight:400; color:#888; text-transform:none; font-size:12px;">(optional)</span></label>
+              <input type="tel" name="phone" placeholder="(555) 555-5555" style="width:100%; padding:12px 16px; border:1px solid rgba(196,165,90,0.4); border-radius:2px; font-size:16px; font-family:var(--font-body); box-sizing:border-box; background:var(--cream);">
+            </div>
+            <div>
+              <label style="display:block; font-weight:600; margin-bottom:6px; color:var(--ink); font-family:var(--font-body); font-size:13px; letter-spacing:1px; text-transform:uppercase;">Your Question</label>
+              <textarea name="message" required placeholder="What would you like to know?" rows="5" style="width:100%; padding:12px 16px; border:1px solid rgba(196,165,90,0.4); border-radius:2px; font-size:16px; font-family:var(--font-body); resize:vertical; box-sizing:border-box; background:var(--cream);"></textarea>
+            </div>
+            <!-- Netlify honeypot: hidden from humans, bots fill it in -->
+            <p style="display:none;" aria-hidden="true">
+              <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+            </p>
+            <div>
+              <button type="submit" class="btn btn-gold" style="width:100%; cursor:pointer; border:none; font-size:16px;">Send Message</button>
+            </div>
+          </form>
         </div>
-        <div>
-          <label style="display:block; font-weight:600; margin-bottom:6px; color:var(--text-charcoal);">Email</label>
-          <input type="email" name="email" required placeholder="your@email.com" style="width:100%; padding:12px 16px; border:1px solid #ccc; border-radius:6px; font-size:16px; font-family:inherit; box-sizing:border-box;">
-        </div>
-        <div>
-          <label style="display:block; font-weight:600; margin-bottom:6px; color:var(--text-charcoal);">Phone <span style="font-weight:400; color:#888;">(optional)</span></label>
-          <input type="tel" name="phone" placeholder="(555) 555-5555" style="width:100%; padding:12px 16px; border:1px solid #ccc; border-radius:6px; font-size:16px; font-family:inherit; box-sizing:border-box;">
-        </div>
-        <div>
-          <label style="display:block; font-weight:600; margin-bottom:6px; color:var(--text-charcoal);">Your Question</label>
-          <textarea name="message" required placeholder="What would you like to know?" rows="5" style="width:100%; padding:12px 16px; border:1px solid #ccc; border-radius:6px; font-size:16px; font-family:inherit; resize:vertical; box-sizing:border-box;"></textarea>
-        </div>
-        <!-- Netlify honeypot: hidden from humans, bots fill it in -->
-        <p style="display:none;" aria-hidden="true">
-          <label>Don't fill this out if you're human: <input name="bot-field" /></label>
-        </p>
-        <div>
-          <button type="submit" class="btn btn-gold" style="width:100%; cursor:pointer; border:none; font-size:16px;">Send Message</button>
-        </div>
-      </form>
-    </div>
+      </div>
 
-    <div style="text-align:center;">
-      <h2>Find Me on HAR.com</h2>
-      <p style="margin-bottom:32px;">Scan to view my full profile, current listings, and client reviews on HAR.com — Houston's most trusted real estate platform.</p>
-      <a href="https://www.har.com/christaburgess" target="_blank">
-        <img src="/assets/img/qr-har.png" alt="Scan to visit Christa Burgess on HAR.com" style="max-width:220px; width:100%; border:4px solid var(--bg-taupe); border-radius:4px;">
-      </a>
-      <p style="margin-top:16px; font-size:14px; color:#888;">har.com/christaburgess</p>
     </div>
+  </div>
+</section>
 
+<div class="field-divider"><span>✦</span></div>
+
+<!-- HAR QR CODE -->
+<section class="section-parchment">
+  <div class="inner" style="text-align:center; max-width:600px;">
+    <p class="section-label">ON THE WEB</p>
+    <h2>Find Me on HAR.com</h2>
+    <p style="margin:16px 0 32px;">Scan to view my full profile, current listings, and client reviews on HAR.com — Houston's most trusted real estate platform.</p>
+    <a href="https://www.har.com/christaburgess" target="_blank">
+      <img src="/assets/img/qr-har.png" alt="Scan to visit Christa Burgess on HAR.com" style="max-width:200px; width:100%; border:3px solid var(--gold); border-radius:2px;">
+    </a>
+    <p style="margin-top:16px; font-size:14px; color:var(--olive); font-family:var(--font-body);">har.com/christaburgess</p>
+  </div>
+</section>
+
+<div class="field-divider"><span>✦</span></div>
+
+<!-- SOCIAL LINKS -->
+<section class="section">
+  <div class="inner" style="text-align:center;">
+    <p class="section-label">CONNECT</p>
+    <h2>Find Me Online</h2>
+    <div style="display:flex; gap:16px; flex-wrap:wrap; justify-content:center; margin-top:24px;">
+      <a href="https://www.facebook.com/christaburgessremax/" target="_blank" rel="noopener" class="btn btn-outline">Facebook</a>
+      <a href="https://www.linkedin.com/in/christaburgess/" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+      <a href="https://www.instagram.com/christapburgess/" target="_blank" rel="noopener" class="btn btn-outline">Instagram</a>
+      <a href="https://www.har.com/christaburgess" target="_blank" rel="noopener" class="btn btn-outline">HAR.com</a>
+    </div>
   </div>
 </section>
 
 <!-- LICENSE / COMPLIANCE -->
 <div class="section-dark">
   <div class="inner" style="text-align:center;">
-    <p style="color:var(--text-light); font-size:14px; line-height:2;">
+    <p style="color:rgba(247,241,227,0.65); font-size:13px; line-height:2.2; font-family:var(--font-body);">
       Christa Burgess · Broker Associate · License #516906<br>
       RE/MAX Cinco Ranch · 2877 Commercial Center Blvd, Katy, TX 77494<br>
       Equal Housing Opportunity

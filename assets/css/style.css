@@ -1,6 +1,6 @@
 /* ============================================================
    Christa Burgess — Field Guide Design System
-   style.css?v=20260616b
+   style.css?v=20260616c
    Warm parchment · Gold accents · Ink text · Naturalist editorial
    ============================================================ */
 
@@ -1608,6 +1608,210 @@ textarea.form-control {
 }
 
 /* ------------------------------------------------------------
+   LAYOUT UTILITIES — INNER / COLUMNS / GRIDS (Phase 4A)
+   ------------------------------------------------------------ */
+.inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: var(--container-pad);
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* ------------------------------------------------------------
+   SECTION COLOUR VARIANTS (Phase 4A)
+   ------------------------------------------------------------ */
+.section-taupe {
+  background-color: var(--parchment);
+  padding: var(--section-pad);
+}
+
+.section-maroon {
+  background-color: var(--maroon);
+  color: var(--cream);
+  padding: var(--section-pad);
+  text-align: center;
+}
+
+.section-maroon h2,
+.section-maroon h3 {
+  color: var(--cream);
+}
+
+.section-maroon p {
+  color: rgba(247, 241, 227, 0.9);
+}
+
+/* ------------------------------------------------------------
+   INNER-PAGE PHOTO HERO (Phase 4A)
+   ------------------------------------------------------------ */
+.hero-sm {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 42vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(42,38,34,0.60) 0%, rgba(42,38,34,0.35) 100%);
+  z-index: 1;
+}
+
+.hero-sm .hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 48px 24px;
+}
+
+.hero-sm h1 {
+  color: var(--cream);
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  margin-bottom: 12px;
+}
+
+/* ------------------------------------------------------------
+   CREAM HERO — no photo (Phase 4A)
+   ------------------------------------------------------------ */
+.hero-cream {
+  background-color: var(--cream);
+  padding: 72px 24px 56px;
+  text-align: center;
+  border-bottom: 1px solid rgba(196,165,90,0.2);
+}
+
+.hero-cream .inner {
+  max-width: 800px;
+}
+
+.hero-cream h1 {
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  color: var(--charcoal);
+  margin-bottom: 16px;
+}
+
+.hero-cream .subtitle {
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--charcoal);
+  opacity: 0.75;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* Generic subtitle — used in heroes and cream headers */
+.subtitle {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+/* Stats strip — reviews page */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 48px 24px;
+  flex-wrap: wrap;
+}
+
+.stats .stat-number {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  color: var(--gold);
+  display: block;
+  text-align: center;
+}
+
+.stats .stat-label {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(247, 241, 227, 0.7);
+  display: block;
+  margin-top: 4px;
+  text-align: center;
+}
+
+/* card-learn link */
+.card-learn {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-top: 12px;
+  display: inline-block;
+  transition: color var(--transition-base);
+}
+
+.card-learn:hover {
+  color: var(--gold-light);
+}
+
+/* Headshot image */
+.headshot {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  display: block;
+  border: 1px solid rgba(196,165,90,0.3);
+}
+
+/* Responsive: collapse two-col, grids on mobile */
+@media (max-width: 720px) {
+  .two-col {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .stats {
+    gap: 32px;
+  }
+
+  .hero-sm {
+    min-height: 32vh;
+  }
+}
+
+/* ------------------------------------------------------------
    UTILITIES — ACCESSIBILITY
    ------------------------------------------------------------ */
 .sr-only {
@@ -1702,6 +1906,182 @@ textarea.form-control {
 .back-to-top:hover {
   background: var(--gold-light);
   color: var(--ink);
+}
+
+/* ============================================================
+   LAYOUT UTILITIES — inner, grid, two-col
+   ============================================================ */
+
+/* .inner = centered container alias for .container */
+.inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: var(--container-pad);
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+/* ============================================================
+   HERO SM — photo background hero (inner pages)
+   ============================================================ */
+
+.hero-sm {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 45vh;
+  overflow: hidden;
+}
+
+.hero-sm .hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 48px 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-sm h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  font-weight: 400;
+  color: var(--cream);
+  line-height: 1.15;
+  margin-bottom: 16px;
+  text-shadow: 0 2px 12px rgba(42,38,34,0.4);
+}
+
+.hero-sm .subtitle {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  color: rgba(247,241,227,0.9);
+  line-height: 1.65;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(42,38,34,0.45);
+  z-index: 1;
+}
+
+/* ============================================================
+   EDITORIAL TYPOGRAPHY UTILITIES
+   ============================================================ */
+
+.editorial-intro {
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--charcoal);
+  max-width: 760px;
+  margin: 16px auto 0;
+}
+
+/* ============================================================
+   SECTION COLOR VARIANTS
+   ============================================================ */
+
+.section-taupe {
+  background-color: var(--parchment);
+  padding: var(--section-pad);
+}
+
+.section-maroon {
+  background-color: var(--maroon);
+  color: var(--cream);
+  padding: var(--section-pad);
+  text-align: center;
+}
+
+.section-maroon h2,
+.section-maroon h3 {
+  color: var(--cream);
+}
+
+.section-maroon p {
+  color: rgba(247,241,227,0.85);
+}
+
+/* ============================================================
+   BUTTON VARIANT — filled gold
+   ============================================================ */
+
+.btn-gold-filled {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--ink);
+  padding: 14px 36px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid var(--gold);
+  transition: background var(--transition-base), color var(--transition-base);
+}
+
+.btn-gold-filled:hover {
+  background: var(--gold-light);
+  border-color: var(--gold-light);
+  color: var(--ink);
+}
+
+/* ============================================================
+   CARD LEARN LINK
+   ============================================================ */
+
+.card-learn {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-decoration: none;
+  margin-top: auto;
+  transition: color var(--transition-base);
+}
+
+.card-learn:hover {
+  color: var(--gold-light);
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .two-col { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+  .grid-2 { grid-template-columns: 1fr; }
+  .grid-3 { grid-template-columns: 1fr; }
+  .hero-sm { min-height: 36vh; }
 }
 
 /* ============================================================
