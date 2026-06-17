@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-  <link rel="stylesheet" href="/assets/css/style.css?v=20260616">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css?v=20260616b">
   <!-- Google Analytics GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Q0Q18VKCG"></script>
   <script>
@@ -20,64 +20,90 @@
 </head>
 <body>
 
-<header>
-  <a href="/" class="logo"><img src="/assets/img/logo-maroon-gold.png" alt="Christa Burgess" class="logo-img"></a>
-  <nav>
-    <a href="/about.html" {% if page.url contains 'about' %}class="active"{% endif %}>About</a>
-    <a href="/communities.html" {% if page.url contains 'communit' %}class="active"{% endif %}>Communities</a>
-    <a href="/relocation/index.html" {% if page.url contains 'relocation' %}class="active"{% endif %}>Relocation</a>
-    <a href="/services.html" {% if page.url contains 'services' %}class="active"{% endif %}>Services</a>
-    <a href="/listings.html" {% if page.url contains 'listings' %}class="active"{% endif %}>Listings</a>
-    <a href="/reviews.html" {% if page.url contains 'reviews' %}class="active"{% endif %}>Reviews</a>
-    <a href="/contact.html" {% if page.url contains 'contact' %}class="active"{% endif %}>Contact</a>
-  </nav>
-</header>
+<nav class="site-nav">
+  <div class="container">
+    <a href="/" class="nav-brand">
+      <img src="/assets/img/logo-maroon-gold.png" alt="Christa Burgess" class="logo-img">
+      <img src="/assets/img/kingfisher-cream.png" alt="" class="nav-kingfisher">
+    </a>
+    <ul class="nav-links">
+      <li><a href="/about.html" {% if page.url contains 'about' %}class="active"{% endif %}>About</a></li>
+      <li><a href="/communities.html" {% if page.url contains 'communit' %}class="active"{% endif %}>Communities</a></li>
+      <li><a href="/relocation/index.html" {% if page.url contains 'relocation' %}class="active"{% endif %}>Relocation</a></li>
+      <li><a href="/services.html" {% if page.url contains 'services' %}class="active"{% endif %}>Services</a></li>
+      <li><a href="/listings.html" {% if page.url contains 'listings' %}class="active"{% endif %}>Listings</a></li>
+      <li><a href="/reviews.html" {% if page.url contains 'reviews' %}class="active"{% endif %}>Reviews</a></li>
+      <li><a href="/contact.html" class="nav-cta" {% if page.url contains 'contact' %}style="background:var(--gold);color:var(--ink);"{% endif %}>Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
 {{ content }}
 
-<footer>
-  <div class="inner">
-    <div>
-      <img src="/assets/img/logo-white.png" alt="Christa Burgess" class="footer-logo-img">
-      <p>Broker Associate | RE/MAX Cinco Ranch<br>
-      2877 Commercial Center Blvd<br>
-      Katy, TX 77494</p>
-      <p style="margin-top:16px">
-        <a href="tel:8325262619">(832) 526-2619</a><br>
-        <a href="mailto:christapburgess@gmail.com">christapburgess@gmail.com</a>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <img src="/assets/img/kingfisher-cream.png" alt="Christa Burgess emblem" class="footer-kingfisher-emblem">
+        <span class="footer-brand-name">Christa Burgess</span>
+        <span class="footer-brand-tagline">Grown. Guided. Gathered.</span>
+        <p class="footer-brand-p">Broker Associate · RE/MAX Cinco Ranch<br>
+        2877 Commercial Center Blvd<br>
+        Katy, TX 77494</p>
+        <p class="footer-brand-p">
+          <a href="tel:8325262619">(832) 526-2619</a><br>
+          <a href="mailto:christapburgess@gmail.com">christapburgess@gmail.com</a>
+        </p>
+      </div>
+
+      <div>
+        <span class="footer-col-heading">Explore</span>
+        <ul class="footer-links">
+          <li><a href="/about.html">About Christa</a></li>
+          <li><a href="/communities.html">Communities</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/listings.html">Listings</a></li>
+          <li><a href="/relocation/index.html">Relocation Guide</a></li>
+          <li><a href="/reviews.html">Client Reviews</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <span class="footer-col-heading">Connect</span>
+        <ul class="footer-links">
+          <li><a href="https://www.facebook.com/christaburgessremax/" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.linkedin.com/in/christaburgess/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/christapburgess/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.har.com/christaburgess" target="_blank" rel="noopener">HAR.com Profile</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-ornament"><span>✦</span></div>
+
+    <div class="footer-compliance">
+      <p class="footer-compliance-text">
+        <a href="https://www.trec.texas.gov/sites/default/files/pdf-forms/IABS%201-2_1.pdf" target="_blank" rel="noopener">Texas Real Estate Commission Information About Brokerage Services</a>
+        &nbsp;|&nbsp;
+        <a href="https://www.trec.texas.gov/sites/default/files/pdf-forms/CN%201-5_0.pdf" target="_blank" rel="noopener">Consumer Protection Notice</a>
+        &nbsp;|&nbsp;
+        <a href="/privacy.html">Privacy Policy</a>
       </p>
+      <p class="footer-compliance-text" style="margin-top:8px;">Each RE/MAX Office is Independently Owned and Operated. We are pledged to the letter and spirit of U.S. policy for equal housing opportunity throughout the nation. No barriers to housing because of race, color, religion, sex, handicap, familial status, or national origin. &#9632; Equal Housing Opportunity</p>
     </div>
-    <div>
-      <h4>Explore</h4>
-      <a href="/about.html" style="display:block">About</a>
-      <a href="/communities.html" style="display:block">Communities</a>
-      <a href="/services.html" style="display:block">Services</a>
-      <a href="/listings.html" style="display:block">Listings</a>
-      <a href="/reviews.html" style="display:block">Reviews</a>
-      <a href="/blog/" style="display:block">Blog</a>
-      <a href="/contact.html" style="display:block">Contact</a>
+
+    <div class="footer-bottom">
+      <span class="footer-copyright">&copy; 2026 Christa Burgess. All rights reserved. &nbsp;·&nbsp; License #516906 &nbsp;·&nbsp; RE/MAX Cinco Ranch</span>
+      <div class="footer-bottom-links">
+        <a href="/privacy.html">Privacy</a>
+        <a href="/sitemap.xml">Sitemap</a>
+      </div>
     </div>
-    <div>
-      <h4>Connect</h4>
-      <a href="https://www.facebook.com/christaburgessremax/" style="display:block" target="_blank">Facebook</a>
-      <a href="https://www.linkedin.com/in/christaburgess/" style="display:block" target="_blank">LinkedIn</a>
-      <a href="https://www.instagram.com/christapburgess/" style="display:block" target="_blank">Instagram</a>
-      <a href="https://www.har.com/christaburgess" style="display:block" target="_blank">HAR.com Profile</a>
-    </div>
-  </div>
-  <div class="footer-compliance">
-    <p>
-      <a href="https://www.trec.texas.gov/sites/default/files/pdf-forms/IABS%201-2_1.pdf" target="_blank" rel="noopener">Texas Real Estate Commission Information About Brokerage Services</a>
-      &nbsp;&nbsp;|&nbsp;&nbsp;
-      <a href="https://www.trec.texas.gov/sites/default/files/pdf-forms/CN%201-5_0.pdf" target="_blank" rel="noopener">Consumer Protection Notice</a>
-      &nbsp;&nbsp;|&nbsp;&nbsp;
-      <a href="/privacy.html">Privacy Policy</a>
-    </p>
-    <p style="margin-top:10px;">Each RE/MAX Office is Independently Owned and Operated.</p>
-    <p style="margin-top:10px; max-width:800px; margin-left:auto; margin-right:auto;">We are pledged to the letter and spirit of U.S. policy for the achievement of equal housing opportunity throughout the nation. We encourage and support an affirmative advertising and marketing program in which there are no barriers to obtaining housing because of race, color, religion, sex, handicap, familial status, or national origin. <strong>&#9632; Equal Housing Opportunity</strong></p>
-  </div>
-  <div class="footer-bottom">
-    &copy; 2026 Christa Burgess. All rights reserved. &nbsp;|&nbsp; License #516906 &nbsp;|&nbsp; RE/MAX Cinco Ranch &nbsp;|&nbsp; 2877 Commercial Center Blvd, Katy, TX 77494
+
   </div>
 </footer>
 
