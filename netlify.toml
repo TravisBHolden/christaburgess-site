@@ -7,6 +7,14 @@
   JEKYLL_ENV = "production"
   RUBY_VERSION = "3.3.6"
 
+[context.branch-deploy.environment]
+  JEKYLL_ENV = "preview"
+
+[[context.branch-deploy.headers]]
+  for = "/*"
+  [context.branch-deploy.headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
 [[redirects]]
   from = "/contact-submit"
   to = "/.netlify/functions/contact"

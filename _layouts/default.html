@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-  <link rel="stylesheet" href="/assets/css/style.css?v=20260601">
+  <link rel="stylesheet" href="/assets/css/style.css?v=20260616">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
   <!-- Google Analytics GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Q0Q18VKCG"></script>
   <script>
@@ -25,6 +25,7 @@
   <nav>
     <a href="/about.html" {% if page.url contains 'about' %}class="active"{% endif %}>About</a>
     <a href="/communities.html" {% if page.url contains 'communit' %}class="active"{% endif %}>Communities</a>
+    <a href="/relocation/index.html" {% if page.url contains 'relocation' %}class="active"{% endif %}>Relocation</a>
     <a href="/services.html" {% if page.url contains 'services' %}class="active"{% endif %}>Services</a>
     <a href="/listings.html" {% if page.url contains 'listings' %}class="active"{% endif %}>Listings</a>
     <a href="/reviews.html" {% if page.url contains 'reviews' %}class="active"{% endif %}>Reviews</a>
