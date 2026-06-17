@@ -220,9 +220,9 @@ small {
 }
 
 .nav-brand img.nav-kingfisher {
-  height: 28px;
+  height: 32px;
   width: auto;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .nav-brand-text {
@@ -609,7 +609,6 @@ small {
   max-height: 340px;
   width: auto;
   max-width: 100%;
-  filter: drop-shadow(0 8px 32px rgba(42, 38, 34, 0.12));
   animation: float 6s ease-in-out infinite;
 }
 
