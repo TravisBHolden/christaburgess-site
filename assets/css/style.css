@@ -610,6 +610,23 @@ small {
   width: auto;
   max-width: 100%;
   animation: float 6s ease-in-out infinite;
+  transition: opacity 0.25s ease, filter 0.25s ease;
+}
+
+a.kingfisher-link {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.kingfisher-link:hover .hero-kingfisher,
+a.kingfisher-link:hover .footer-kingfisher {
+  opacity: 0.82;
+  filter: brightness(1.18);
+}
+
+.contact-cta a.kingfisher-link {
+  display: block;
 }
 
 @keyframes float {
