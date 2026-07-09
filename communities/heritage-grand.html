@@ -25,10 +25,12 @@ description: Heritage Grand at Cinco Ranch — Katy's premier 55+ active adult c
         <div class="stat-value">{{ stats.active }}</div>
         <div class="stat-label">Homes For Sale</div>
       </div>
+      {% if stats.new_this_week %}
       <div class="stat-box">
         <div class="stat-value">{{ stats.new_this_week }}</div>
         <div class="stat-label">New This Week</div>
       </div>
+      {% endif %}
       <div class="stat-box">
         <div class="stat-value">{{ stats.avg_dom }}</div>
         <div class="stat-label">Avg. Days on Market</div>

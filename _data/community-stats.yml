@@ -1,65 +1,64 @@
-# Community market stats — updated via HAR.com
-# Last updated: June 15, 2026
+# Community market stats — updated via HAR.com + supplemental sources
+# Last updated: July 8, 2026
+# Sources: HAR.com masterplan pages, Redfin, texasrealestatesource.com, homes.com, katyhomesforsaletx.com
 # To update: edit values below and push. Jekyll rebuilds automatically.
 
-updated: "June 15, 2026"
+updated: "July 8, 2026"
 
 communities:
   cinco-ranch:
-    active: 253
-    new_this_week: 10
-    avg_dom: 32
-    avg_list_price: "$669,077"
-    avg_price_sqft: "$192.94"
+    active: 267
+    avg_dom: 44
+    avg_list_price: "$579,995"
+    avg_price_sqft: "$198"
     price_range: "$295K – $2.1M"
     har_url: "https://www.har.com/cinco-ranch/masterplan_6"
 
   grand-lakes:
-    active: 46
-    avg_list_price: "$680,180"
-    avg_price_sqft: "$189.98"
-    price_range: "$264K – $960K+"
+    active: 47
+    avg_dom: 26
+    avg_list_price: "$595,000"
+    avg_price_sqft: "$196"
+    price_range: "$319K – $1.1M"
     har_url: "https://www.har.com/grand-lakes/masterplan_15"
     source_note: "ZIP 77450 & 77494"
 
   cross-creek-ranch:
-    active: 178
-    new_this_week: 3
-    avg_dom: 53
-    avg_list_price: "$632,182"
-    avg_price_sqft: "$197.47"
+    active: 183
+    avg_dom: 35
+    avg_list_price: "$574,000"
+    avg_price_sqft: "$198"
     price_range: "$289K – $1.55M"
     har_url: "https://www.har.com/cross-creek-ranch/masterplan_80"
 
   fulshear:
-    active: 986
-    new_this_week: 38
-    avg_dom: 38
+    active: 807
+    avg_list_price: "$619,576"
+    avg_price_sqft: "$195"
     price_range: "$260K – $3.7M"
     har_url: "https://www.har.com/fulshear/realestate/for_sale"
+    source_note: "ZIP 77441 total"
 
   heritage-grand:
-    active: 11
-    new_this_week: 1
-    avg_dom: 47
-    avg_list_price: "$361,000"
+    active: 10
+    avg_dom: 54
+    avg_list_price: "$359,450"
+    avg_price_sqft: "$181"
     price_range: "$310K – $460K"
-    har_url: "https://www.har.com/katy/realestate/for_sale?subdivisions=Heritage+Grand"
+    har_url: "https://www.har.com/heritage-grand/seniorliving_60"
 
   jordan-ranch:
-    active: 188
-    new_this_week: 3
-    avg_dom: 39
-    avg_list_price: "$537,551"
-    avg_price_sqft: "$194.46"
-    price_range: "$320K – $1.45M"
+    active: 175
+    avg_dom: 60
+    avg_list_price: "$587,000"
+    avg_price_sqft: "$186"
+    price_range: "$320K – $1.15M"
     har_url: "https://www.har.com/jordan-ranch/masterplan_118"
+    market_note: "Softening — 6.7 months inventory (buyer's market)"
 
   bonterra-at-cross-creek-ranch:
-    active: 16
-    new_this_week: 2
-    avg_dom: 55
-    avg_list_price: "$485,000"
-    avg_price_sqft: "$206.39"
-    price_range: "$335K – $699K"
+    active: 10
+    avg_list_price: "$408,000"
+    avg_price_sqft: "$192"
+    price_range: "$290K – $650K"
     har_url: "https://www.har.com/pricetrends/bonterra-at-cross-creek-ranch-realestate/12283/for-sale"
