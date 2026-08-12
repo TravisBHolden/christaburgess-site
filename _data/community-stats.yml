@@ -1,64 +1,67 @@
 # Community market stats — updated via HAR.com + supplemental sources
-# Last updated: July 8, 2026
-# Sources: HAR.com masterplan pages (live counts), Redfin, texasrealestatesource.com, homes.com, katyhomesforsaletx.com
+# Last updated: August 11, 2026
+# Sources: HAR.com masterplan/subdivision pages (live counts via Google search metadata),
+#          Redfin, homes.com, katyhomesforsaletx.com, orchard.com
 # To update: edit values below and push. Jekyll rebuilds automatically.
 
-updated: "July 8, 2026"
+updated: "August 11, 2026"
 
 communities:
   cinco-ranch:
-    active: 267
-    avg_dom: 44
-    avg_list_price: "$579,995"
-    avg_price_sqft: "$198"
-    price_range: "$295K – $2.1M"
+    active: 225          # HAR masterplan_6 description, ~Aug 9 2026 (was 267 July 8)
+    avg_dom: 41          # katyhomesforsaletx: median CDOM 40.5 days (was 44)
+    avg_list_price: "$565,000"  # katyhomesforsaletx median sales price (+9% YoY, was $579,995)
+    avg_price_sqft: "$198"      # unchanged from July
+    price_range: "$320K – $1.1M"  # active listing range; estates exceed $2M
     har_url: "https://www.har.com/cinco-ranch/masterplan_6"
 
   grand-lakes:
-    active: 47
-    avg_dom: 26
-    avg_list_price: "$595,000"
-    avg_price_sqft: "$196"
-    price_range: "$319K – $1.1M"
+    active: 40            # homes.com July 2026 (was 47)
+    avg_dom: 26           # homes.com; no new data, unchanged
+    avg_list_price: "$625,000"  # Redfin median sale price Jun 2026 $624,783 (was $595,000)
+    avg_price_sqft: "$196"      # unchanged
+    price_range: "$320K – $1.1M"  # homes.com July 2026: $319,900–$1,095,000
     har_url: "https://www.har.com/grand-lakes/masterplan_15"
     source_note: "ZIP 77450 & 77494"
 
   cross-creek-ranch:
-    active: 183
-    avg_dom: 35
-    avg_list_price: "$574,000"
-    avg_price_sqft: "$198"
-    price_range: "$289K – $1.55M"
+    active: 182           # HAR masterplan_80 search description, ~Aug 5 2026 (was 183)
+    avg_dom: 35           # Redfin/Orchard range 32–38 days; holding at 35
+    avg_list_price: "$619,500"  # Orchard 30-day median sale price (was $574,000)
+    avg_price_sqft: "$198"      # unchanged
+    price_range: "$289K – $1.55M"  # unchanged
     har_url: "https://www.har.com/cross-creek-ranch/masterplan_80"
 
   fulshear:
-    active: 807
-    avg_list_price: "$619,576"
-    avg_price_sqft: "$195"
-    price_range: "$260K – $3.7M"
+    active: 857           # HAR zipcode_77441 August 2026 (was 807)
+    avg_list_price: "$595,872"  # HAR zipcode_77441 August 2026 (was $619,576)
+    avg_price_sqft: "$192"      # HAR zipcode_77441 August 2026 (was $195)
+    price_range: "$260K – $3.7M"  # unchanged
     har_url: "https://www.har.com/fulshear/realestate/for_sale"
-    source_note: "ZIP 77441 total"
+    source_note: "ZIP 77441 total — includes all Fulshear communities"
 
   heritage-grand:
-    active: 10
-    avg_dom: 54
-    avg_list_price: "$359,450"
-    avg_price_sqft: "$181"
-    price_range: "$310K – $460K"
+    active: 5             # est. ~3–7; exprealty shows 3, texasrealestatesource June: 10 (was 10)
+    avg_dom: 54           # unchanged; no new CDOM data available
+    avg_list_price: "$340,000"  # est. (visible listings at $299,900; was $359,450)
+    avg_price_sqft: "$181"      # unchanged
+    price_range: "$299K – $460K"  # updated low end from visible active listing (was $310K – $460K)
     har_url: "https://www.har.com/heritage-grand/seniorliving_60"
+    market_note: "Very thin inventory — 55+ gated community; counts vary by source"
 
   jordan-ranch:
-    active: 175
-    avg_dom: 60
-    avg_list_price: "$587,000"
-    avg_price_sqft: "$186"
-    price_range: "$320K – $1.15M"
+    active: 187           # HAR masterplan_118, ~July 22 2026 (was 175)
+    avg_dom: 60           # katyhomesforsaletx June 2026 (unchanged)
+    avg_list_price: "$587,000"  # unchanged
+    avg_price_sqft: "$186"      # unchanged
+    price_range: "$320K – $1.15M"  # unchanged
     har_url: "https://www.har.com/jordan-ranch/masterplan_118"
-    market_note: "Softening — 6.7 months inventory (buyer's market)"
+    market_note: "Buyer's market — 6.7 months inventory, 23% fewer sales YoY"
 
   bonterra-at-cross-creek-ranch:
-    active: 11
-    avg_list_price: "$408,000"
-    avg_price_sqft: "$192"
-    price_range: "$290K – $650K"
+    active: 12            # HAR listing page AI summary: 12 homes (was 11)
+    avg_list_price: "$408,000"  # unchanged
+    avg_price_sqft: "$192"      # unchanged
+    price_range: "$290K – $650K"  # unchanged
     har_url: "https://www.har.com/pricetrends/bonterra-at-cross-creek-ranch-realestate/12283/for-sale"
+    market_note: "55+ community within Cross Creek Ranch; thin resale market"
